@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8DD1D2F-9036-4127-930A-9023623F8D76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>new_game</RootNamespace>
+    <AssemblyName>new game</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win.Designer.cs">
+      <DependentUpon>Win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quit.Designer.cs">
+      <DependentUpon>Quit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Win.resx">
+      <DependentUpon>Win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Quit.resx">
+      <DependentUpon>Quit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card 7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card 8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sheep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Axle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bealcha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Grapes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Box.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bycycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarSmoke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drum2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elephant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happyfish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hoe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jacket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laptop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mangosteen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnionLike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pilayer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pineapple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scissor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sheep1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slipper1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sofa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Umbrella.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %287%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Van.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool1img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sheep2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pilayer1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptopfinal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yesbutton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nobt1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yesB1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nobt11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noBt2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\For Quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ballonbg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ballonbg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ballonbg1A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ballonbg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ballonbg2A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ballonbg4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Congratz1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Congratz1A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happyface1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Congrats1Ab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happyfc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background1a.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

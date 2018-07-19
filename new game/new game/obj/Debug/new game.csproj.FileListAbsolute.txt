@@ -1,0 +1,14 @@
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\bin\Debug\new game.exe.config
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\bin\Debug\new game.exe
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\bin\Debug\new game.pdb
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new_game.Form1.resources
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new_game.Properties.Resources.resources
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new game.csproj.GenerateResource.Cache
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new game.exe
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new game.pdb
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new_game.Form2.resources
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new game.csprojResolveAssemblyReference.cache
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new_game.Form3.resources
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new_game.Startup.resources
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new_game.Form4.resources
+G:\Documents\VISUAL STUDIO 2015\Projects\new game\new game\obj\Debug\new_game.Quit.resources
